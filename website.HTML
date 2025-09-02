@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <title>WEBSITE</title>
+        <style>
+            body{
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+              font-style: italic;
+              background-color: grey;
+            }
+            .topnav{
+                background-color:snow;
+                overflow: hidden;
+            }
+            .topnav a{
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                font-size: 20px;
+            }
+            .topnav a:hover{
+                background-color: salmon;
+                color: lightgray;
+            }
+            .topnav a.active{
+                background-color: lightcoral;
+                color: black;
+            }
+            .footer{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: black;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </HEAD>
+    <body>
+        <div class="topnav">
+          <h1>NAVIGATION BAR</h1>
+          <p>I am going to make a link about my school and some other stuff i like.</p>
+          <p>We are going to make <b>my school</b> webpage.</p>
+          <a class="active" href="home2.html">HOME</a>
+          <a href="about2.html">ABOUT</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="contact.html">CONTACT US</a>
+          </div>
+          <section>
+            <p>I AM GOING TO SHOW DIFFERENT IMAGES HERE</p>
+            <img class="myslides" src="OTHER CAMERA.png" style="height: 200px;">
+            <img class="myslides" src="Zari.png" style="height: 200px;">
+            <img class="myslides" src="learn.png" style="height: 200px;">
+            <img class="myslides" src="WORD CATCHER.jpg" style="height: 200px;">
+            <img class="myslides" src="PHONE SCREEN.jpg" style="height: 200px;">
+            <img class="myslides" src="duolingo.png" style="height: 200px;">
+            <img class="myslides" src="angela.png" style="height: 200px;">
+            <img class="myslides" src="star.png" style="height: 200px;">
+            <img class="myslides" src="codingal.png" style="height: 200px;">
+            <img class="myslides" src="flames.png" style="height: 200px;">
+            <img class="myslides" src="MARS.jpg" style="height: 200px;">
+            <img class="myslides" src="ROCKET.jpg" style="height: 200px;">
+            <img class="myslides" src="DOODLING PICTURE.jpg" style="height: 200px;">
+            <img class="myslides" src="ROCKET BACKGROUND.jpg" style="height: 200px;">
+            <img class="myslides" src="QUIZ GAME BACKGROUND.jpg" style="height: 200px;">
+            <img class="myslides" src="TELESCOPE.png" style="height: 200px;">
+            <img class="myslides" src="CAT.jpg" style="height: 200px;">
+            <img class="myslides" src="THANK YOU.jpg" style="height: 200px;">
+            <img class="myslides" src="FIRE.jpg" style="height: 200px;">
+            <img class="myslides" src="SATURN.jpg" style="height: 200px;">
+            <img class="myslides" src="PASTA.jpg" style="height: 200px;">
+            <img class="myslides" src="BEAUTIFUL.png" style="height: 200px;">
+          </section>
+           <script>
+            var myIndex=0;
+            carousel();
+
+            function carousel(){
+                var i;
+                var x=document.getElementsByClassName("myslides");
+                for(i=0;i<x.length;i++){
+                    x[i].style.display="none";
+                }
+                myIndex++;
+                if(myIndex>x.length){
+                    myIndex=1
+                }
+                x[myIndex-1].style.display="block";
+                setTimeout(carousel,2000);
+            }
+        </script>
+        <div class="footer">
+            <p>@copy all rights and reserved by Atiyyatullah</p>
+        </div>
+    </body>
+</HTML>
